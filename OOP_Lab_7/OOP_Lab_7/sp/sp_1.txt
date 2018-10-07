@@ -1,0 +1,7 @@
+Parte de las funcionalidades fueron la base de la interaccion de archivos multimedia sin necesidad de depender de otras aplicaciones. Mas adelante, estas fueron reemplazadas por los bots por ejemplo, que actuan similar a las ya mencionadas para ser usados dentro de la conversacion mediante alias. En mayo de 2016 se anadio un listado de accesos para compartir contenido ubicado en el menu de adjuntos.
+
+Desde 2014 es posible realizar mensajes restringidos con chats secretos: Siempre que el otro usuario acepte la invitacion y tenga un cliente compatible, los mensajes son firmados por una clave de cifrado de dispositivo a dispositivo.? Las claves son visualizadas en forma de cuadros binarios y revocables por un tiempo. Adicionalmente, los mensajes son efimeros;? en octubre de 2014 se incluyo el modo "toca y suelta" para las imagenes que pueden ser eliminadas pasado cierto tiempo.?
+
+En 2016 ya es posible realizar conversaciones consigo mismo siendo util para guardar mensajes y contenido en la nube. En el mismo ano se estreno Instant View para ver un extracto de una pagina web.33?34? En 2017 se anadieron las opciones de llamadas y pagos en linea.? En noviembre del mismo ano se anade la opcion de compartir la ubicacion en directo por un tiempo establecido.
+
+En 2017 se incluye la opcion de autoborrado de imagenes y videos sin recurrir a los chats secretos.
