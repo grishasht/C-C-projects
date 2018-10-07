@@ -1,0 +1,97 @@
+Microsoft (R) Macro Assembler Version 5.00                  6/1/18 12:34:24
+                                                             Page     1-1
+
+
+				.386 
+ 0000				DATA SEGMENT 
+ 0000  0D000000				Chsl1	DD	13 
+ 0004  7B142E40				Chsl2	dd	2.72 
+ 0008  6666666666661FC0			Chsl3	dq	-7.85 
+ 0010  FCFFFFFFFFFFFFFF			Chsl4	dq	-4 
+ 0018  00080000				var1	dd	2048 
+ 001C  00F8FFFFFFFFFFFF			var2	dq	-2048 
+ 0024				DATA ENDS 
+					 
+					ASSUME cs:code, ds:data 
+					 
+ 0000				CODE SEGMENT 
+					 
+ 0000  D9 E4				Ftst	 
+ 0002  26: D8 24BD 00000000		Fsub ES:Chsl1[edi*4] 
+	R			
+ 000A  DE EB				Fsubp  st(3) ,st(0) 
+ 000C  D9 CC				Fxch st(4) 
+ 000E  2E: D8 24BD 00000018		Fsub CS:var1[edi*4] 
+	R			
+ 0016  D8 24BD 00000000 R		Fsub DS:Chsl1[edi*4] 
+ 001D  26: D8 24AD 00000000		Fsub ES:Chsl1[ebp*4] 
+	R			
+ 0025  36: D8 24AD 00000000		Fsub SS:Chsl1[ebp*4] 
+	R			
+ 002D  D8 24AD 00000000 R		Fsub DS:Chsl1[ebp*4] 
+					 
+ 0034  2E: DC 24BD 0000001C		Fsub CS:var2[edi*4] 
+	R			
+ 003C  D8 24BD 00000000 R		Fsub DS:Chsl1[edi*4] 
+ 0043  26: D8 24DD 00000004		Fsub ES:Chsl2[ebx*8] 
+	R			
+ 004B  36: DC 24ED 00000008		Fsub SS:Chsl3[ebp*8] 
+	R			
+ 0053  DC 24AD 00000010 R		Fsub DS:Chsl4[ebp*4] 
+					 
+ 005A  36: D8 2445 00000004		Fsub SS:Chsl2[eax*2] 
+	R			
+ 0062  DE ED				Fsubp  st(5) ,st(0) 
+ 0064  D9 CB				FXch st(3) 
+ 0066  DE E8				Fsubp  st(0) ,st(0) 
+					 
+ 0068  26: DC 24DD 00000008		Fsub ES:Chsl3[ebx*8] 
+	R			
+ 0070  DE EA				Fsubp  st(2) ,st(0) 
+ 0072  D9 CE				Fxch st(6) 
+ 0074  D9 C8				Fxch st(0) 
+					 
+ 0076  DC 24F5 00000010 R		Fsub DS:Chsl4[esi*8] 
+ 007D  DE EA				Fsubp  st(2) ,st(0) 
+ 007F  D9 CD				Fxch st(5) 
+					 
+ 0081				CODE ENDS 
+Microsoft (R) Macro Assembler Version 5.00                  6/1/18 12:34:24
+                                                             Page     1-2
+
+
+				END 
+Microsoft (R) Macro Assembler Version 5.00                  6/1/18 12:34:24
+                                                             Symbols-1
+
+
+
+
+                N a m e         	Size	Length	 Align	Combine Class
+
+CODE . . . . . . . . . . . . . .  	32 Bit	0081	PARA	NONE	
+DATA . . . . . . . . . . . . . .  	32 Bit	0024	PARA	NONE	
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+CHSL1  . . . . . . . . . . . . .  	L DWORD	0000	DATA
+CHSL2  . . . . . . . . . . . . .  	L DWORD	0004	DATA
+CHSL3  . . . . . . . . . . . . .  	L QWORD	0008	DATA
+CHSL4  . . . . . . . . . . . . .  	L QWORD	0010	DATA
+
+VAR1 . . . . . . . . . . . . . .  	L DWORD	0018	DATA
+VAR2 . . . . . . . . . . . . . .  	L QWORD	001C	DATA
+
+@FILENAME  . . . . . . . . . . .  	TEXT  Test		
+
+
+     46 Source  Lines
+     46 Total   Lines
+     10 Symbols
+
+  50990 + 465554 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors

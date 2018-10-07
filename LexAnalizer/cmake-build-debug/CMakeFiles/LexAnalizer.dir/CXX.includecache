@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Grisha1.Grisha-HPpc/Documents/Visual Studio 2017/Projects/LexAnalizer/LexAnalizer/Functions.cpp
+Functions.h
+C:/Users/Grisha1.Grisha-HPpc/Documents/Visual Studio 2017/Projects/LexAnalizer/LexAnalizer/Functions.h
+cstring
+-
+vector
+-
+
+C:/Users/Grisha1.Grisha-HPpc/Documents/Visual Studio 2017/Projects/LexAnalizer/LexAnalizer/Functions.h
+iostream
+-
+cstdlib
+-
+stdio.h
+-
+cstring
+-
+vector
+-
+fstream
+-
+cctype
+-
+
+C:/Users/Grisha1.Grisha-HPpc/Documents/Visual Studio 2017/Projects/LexAnalizer/LexAnalizer/test.cpp
+Functions.h
+C:/Users/Grisha1.Grisha-HPpc/Documents/Visual Studio 2017/Projects/LexAnalizer/LexAnalizer/Functions.h
+

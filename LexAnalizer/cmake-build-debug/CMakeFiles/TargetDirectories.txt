@@ -1,0 +1,3 @@
+C:/Users/Grisha1.Grisha-HPpc/Documents/Visual Studio 2017/Projects/LexAnalizer/cmake-build-debug/CMakeFiles/LexAnalizer.dir
+C:/Users/Grisha1.Grisha-HPpc/Documents/Visual Studio 2017/Projects/LexAnalizer/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Grisha1.Grisha-HPpc/Documents/Visual Studio 2017/Projects/LexAnalizer/cmake-build-debug/CMakeFiles/rebuild_cache.dir

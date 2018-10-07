@@ -1,0 +1,510 @@
+|----------------------------------------------------------------
+#1#             
+Numb|    Lexem|    Symb num|      Type|
+|----------------------------------------------------------------
+#2#   DATA SEGMENT
+Numb|    Lexem|    Symb num|      Type|
+0            DATA         4               Identifier
+1      SEGMENT         7        Directive
+Mark field: 0
+Mnemocode field: 1
+|----------------------------------------------------------------
+#3#   	Chsl1	DD	13
+Numb|    Lexem|    Symb num|      Type|
+0          CHSL1         5              Identifier
+1                DD         2             Directive
+2                13         2                 Digit
+Mark field: 0
+Mnemocode field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#4#   	Chsl2	dd	2.72
+Numb|    Lexem|    Symb num|      Type|
+0          CHSL2         5              Identifier
+1                DD         2             Directive
+2            2.72         4               Digit
+Mark field: 0
+Mnemocode field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#5#   	Chsl3	dq	-7.85
+Numb|    Lexem|    Symb num|      Type|
+0          CHSL3         5              Identifier
+1                DQ         2             Directive
+2          -7.85         5              Digit
+Mark field: 0
+Mnemocode field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#6#   	Chsl4	dq	-4
+Numb|    Lexem|    Symb num|      Type|
+0          CHSL4         5              Identifier
+1                DQ         2             Directive
+2                -4         2                 Digit
+Mark field: 0
+Mnemocode field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#7#   	var1	dd	2048
+Numb|    Lexem|    Symb num|      Type|
+0            VAR1         4               Identifier
+1                DD         2             Directive
+2            2048         4               Digit
+Mark field: 0
+Mnemocode field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#8#   	var2	dq	-2048
+Numb|    Lexem|    Symb num|      Type|
+0            VAR2         4               Identifier
+1                DQ         2             Directive
+2          -2048         5              Digit
+Mark field: 0
+Mnemocode field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#9#   	12var	dd	345
+Numb|    Lexem|    Symb num|      Type|
+0          12VAR         5              Identifier
+1                DD         2             Directive
+2              345         3                Digit
+Mark field: 0
+Mnemocode field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#10#   	kjsdkf	db	231
+Numb|    Lexem|    Symb num|      Type|
+0        KJSDKF         6             Identifier
+1                DB         2                 Identifier
+2              231         3                Digit
+Mark field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#11#   	adsfasdfasfafa	dd	345
+Numb|    Lexem|    Symb num|      Type|
+0ADSFASDFASFAFA        14     Identifier
+1                DD         2             Directive
+2              345         3                Digit
+Mark field: 0
+Mnemocode field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#12#   	var3	dd	12121212121212121212
+Numb|    Lexem|    Symb num|      Type|
+0            VAR3         4               Identifier
+1                DD         2             Directive
+212121212121212121212        20Digit
+Mark field: 0
+Mnemocode field: 1
+Operand 1 field (pos, num of lex): 2, 1
+|----------------------------------------------------------------
+#13#    DATA ENDS
+Numb|    Lexem|    Symb num|      Type|
+0            DATA         4               Identifier
+1            ENDS         4           Directive
+Mark field: 0
+Mnemocode field: 1
+|----------------------------------------------------------------
+#14#            	
+|----------------------------------------------------------------
+#15#            	
+|----------------------------------------------------------------
+#16#            	
+|----------------------------------------------------------------
+#17#   CODE SEGMENT
+Numb|    Lexem|    Symb num|      Type|
+0            CODE         4               Identifier
+1      SEGMENT         7        Directive
+Mark field: 0
+Mnemocode field: 1
+|----------------------------------------------------------------
+#18#            	
+|----------------------------------------------------------------
+#19#       	Ftst	
+Numb|    Lexem|    Symb num|      Type|
+0            FTST         4             Command
+Mnemocode field: 0
+|----------------------------------------------------------------
+#20#   	Fadd st(3) ,st(0)
+Numb|    Lexem|    Symb num|      Type|
+0            FADD         41                ST         2                  Stek
+2                  (         1                 Symbol
+3                  3         1                  Digit
+4                  )         1                 Symbol
+5                  ,         1                 Symbol
+6                ST         2                  Stek
+7                  (         1                 Symbol
+8                  0         1                  Digit
+9                  )         1                 Symbol
+Operand 1 field (pos, num of lex): 1, 4
+Operand 2 field (pos, num of lex): 6, 4
+|----------------------------------------------------------------
+#21#   	Fsub ES:Chsl1[edi*4]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                ES         2              Register
+2                  :         1                 Symbol
+3          CHSL1         5              Identifier
+4                  [         1                 Symbol
+5              EDI         3             Register
+6                  *         1                 Symbol
+7                  4         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#22#   	Fsub ES:Chsl1[edi]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                ES         2              Register
+2                  :         1                 Symbol
+3          CHSL1         5              Identifier
+4                  [         1                 Symbol
+5              EDI         3             Register
+6                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 6
+|----------------------------------------------------------------
+#23#   	Fsub ES:[edi]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                ES         2              Register
+2                  :         1                 Symbol
+3                  [         1                 Symbol
+4              EDI         3             Register
+5                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 6
+|----------------------------------------------------------------
+#24#   	Fsubp  st(3) ,st(0)
+Numb|    Lexem|    Symb num|      Type|
+0          FSUBP         5            Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  3         1                  Digit
+4                  )         1                 Symbol
+5                  ,         1                 Symbol
+6                ST         2                  Stek
+7                  (         1                 Symbol
+8                  0         1                  Digit
+9                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+Operand 2 field (pos, num of lex): 6, 4
+|----------------------------------------------------------------
+#25#   	Fxch st(8)
+Numb|    Lexem|    Symb num|      Type|
+0            FXCH         4             Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  8         1                  Digit
+4                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+|----------------------------------------------------------------
+#26#   	Fsub CS:var[edi*4]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                CS         2              Register
+2                  :         1                 Symbol
+3              VAR         34                  [         1                 Symbol
+5              EDI         3             Register
+6                  *         1                 Symbol
+7                  4         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#27#   	Fsub DS:Chsl1[edi*4]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                DS         2              Register
+2                  :         1                 Symbol
+3          CHSL1         5              Identifier
+4                  [         1                 Symbol
+5              EDI         3             Register
+6                  *         1                 Symbol
+7                  4         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#28#   	Fsub ES:Chsl1[ebp*4]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                ES         2              Register
+2                  :         1                 Symbol
+3          CHSL1         5              Identifier
+4                  [         1                 Symbol
+5              EBP         3             Register
+6                  *         1                 Symbol
+7                  4         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#29#   	Fsub SS:Chsl1[ebp*4]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                SS         2              Register
+2                  :         1                 Symbol
+3          CHSL1         5              Identifier
+4                  [         1                 Symbol
+5              EBP         3             Register
+6                  *         1                 Symbol
+7                  4         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#30#   	Fsub DS:Chsl1[ebp*4]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                DS         2              Register
+2                  :         1                 Symbol
+3          CHSL1         5              Identifier
+4                  [         1                 Symbol
+5              EBP         3             Register
+6                  *         1                 Symbol
+7                  4         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#31#            	
+|----------------------------------------------------------------
+#32#   	Fsub CS:var2[edi*4]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                CS         2              Register
+2                  :         1                 Symbol
+3            VAR2         4               Identifier
+4                  [         1                 Symbol
+5              EDI         3             Register
+6                  *         1                 Symbol
+7                  4         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#33#   	Fsub DS:Chsl1[edi*4]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                DS         2              Register
+2                  :         1                 Symbol
+3          CHSL1         5              Identifier
+4                  [         1                 Symbol
+5              EDI         3             Register
+6                  *         1                 Symbol
+7                  4         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#34#   	Fsub ES:Chsl2[ebx*8]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                ES         2              Register
+2                  :         1                 Symbol
+3          CHSL2         5              Identifier
+4                  [         1                 Symbol
+5              EBX         3             Register
+6                  *         1                 Symbol
+7                  8         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#35#   	Fsub SS:Chsl3[ebp*8]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                SS         2              Register
+2                  :         1                 Symbol
+3          CHSL3         5              Identifier
+4                  [         1                 Symbol
+5              EBP         3             Register
+6                  *         1                 Symbol
+7                  8         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#36#   	Fsub DS:Chsl4[ebp*4]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                DS         2              Register
+2                  :         1                 Symbol
+3          CHSL4         5              Identifier
+4                  [         1                 Symbol
+5              EBP         3             Register
+6                  *         1                 Symbol
+7                  4         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#37#            	
+|----------------------------------------------------------------
+#38#   	Fsub SS:Chsl2[eax*2]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                SS         2              Register
+2                  :         1                 Symbol
+3          CHSL2         5              Identifier
+4                  [         1                 Symbol
+5              EAX         3             Register
+6                  *         1                 Symbol
+7                  2         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#39#   	Fsubp  st(5) ,st(0)
+Numb|    Lexem|    Symb num|      Type|
+0          FSUBP         5            Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  5         1                  Digit
+4                  )         1                 Symbol
+5                  ,         1                 Symbol
+6                ST         2                  Stek
+7                  (         1                 Symbol
+8                  0         1                  Digit
+9                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+Operand 2 field (pos, num of lex): 6, 4
+|----------------------------------------------------------------
+#40#   	FXch st(3)
+Numb|    Lexem|    Symb num|      Type|
+0            FXCH         4             Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  3         1                  Digit
+4                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+|----------------------------------------------------------------
+#41#   	Fsubp  st(0) ,st(0)
+Numb|    Lexem|    Symb num|      Type|
+0          FSUBP         5            Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  0         1                  Digit
+4                  )         1                 Symbol
+5                  ,         1                 Symbol
+6                ST         2                  Stek
+7                  (         1                 Symbol
+8                  0         1                  Digit
+9                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+Operand 2 field (pos, num of lex): 6, 4
+|----------------------------------------------------------------
+#42#            	
+|----------------------------------------------------------------
+#43#   	Fsub ES:Chsl3[ebx*8]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                ES         2              Register
+2                  :         1                 Symbol
+3          CHSL3         5              Identifier
+4                  [         1                 Symbol
+5              EBX         3             Register
+6                  *         1                 Symbol
+7                  8         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#44#   	Fsubp  st(2) ,st(0)
+Numb|    Lexem|    Symb num|      Type|
+0          FSUBP         5            Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  2         1                  Digit
+4                  )         1                 Symbol
+5                  ,         1                 Symbol
+6                ST         2                  Stek
+7                  (         1                 Symbol
+8                  0         1                  Digit
+9                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+Operand 2 field (pos, num of lex): 6, 4
+|----------------------------------------------------------------
+#45#   	Fxch st(6)
+Numb|    Lexem|    Symb num|      Type|
+0            FXCH         4             Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  6         1                  Digit
+4                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+|----------------------------------------------------------------
+#46#   	Fxch st(0)
+Numb|    Lexem|    Symb num|      Type|
+0            FXCH         4             Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  0         1                  Digit
+4                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+|----------------------------------------------------------------
+#47#            	
+|----------------------------------------------------------------
+#48#   	Fsub DS:Chsl4[esi*8]
+Numb|    Lexem|    Symb num|      Type|
+0            FSUB         4             Command
+1                DS         2              Register
+2                  :         1                 Symbol
+3          CHSL4         5              Identifier
+4                  [         1                 Symbol
+5              ESI         3             Register
+6                  *         1                 Symbol
+7                  8         1                  Digit
+8                  ]         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 8
+|----------------------------------------------------------------
+#49#   	Fsubp  st(2) ,st(0)
+Numb|    Lexem|    Symb num|      Type|
+0          FSUBP         5            Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  2         1                  Digit
+4                  )         1                 Symbol
+5                  ,         1                 Symbol
+6                ST         2                  Stek
+7                  (         1                 Symbol
+8                  0         1                  Digit
+9                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+Operand 2 field (pos, num of lex): 6, 4
+|----------------------------------------------------------------
+#50#   	Fxch st(5)
+Numb|    Lexem|    Symb num|      Type|
+0            FXCH         4             Command
+1                ST         2                  Stek
+2                  (         1                 Symbol
+3                  5         1                  Digit
+4                  )         1                 Symbol
+Mnemocode field: 0
+Operand 1 field (pos, num of lex): 1, 4
+|----------------------------------------------------------------
+#51#            	
+|----------------------------------------------------------------
+#52#    CODE ENDS
+Numb|    Lexem|    Symb num|      Type|
+0            CODE         4               Identifier
+1            ENDS         4           Directive
+Mark field: 0
+Mnemocode field: 1
+|----------------------------------------------------------------
+#53#          END
+Numb|    Lexem|    Symb num|      Type|
+0              END         3            Directive
+Mnemocode field: 0
