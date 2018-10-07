@@ -1,0 +1,5 @@
+﻿D:\Visual Studio\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (test.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  Пропуск... (изменения не обнаружены)
+  main.cpp
+  test.vcxproj -> C:\Users\Grisha1.Grisha-HPpc\Documents\Visual Studio 2017\Projects\DKR\Debug\DKR.exe
+  test.vcxproj -> C:\Users\Grisha1.Grisha-HPpc\Documents\Visual Studio 2017\Projects\DKR\Debug\DKR.pdb (Partial PDB)
