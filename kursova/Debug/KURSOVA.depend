@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1493240321 source:c:\users\grisha1.grisha-hppc\desktop\kursova\alg_2.c
+	"Common.h"
+	"Alg_2.h"
+
+1493901834 c:\users\grisha1.grisha-hppc\desktop\kursova\common.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1492880100 c:\users\grisha1.grisha-hppc\desktop\kursova\alg_2.h
+
+1493255465 source:c:\users\grisha1.grisha-hppc\desktop\kursova\common.c
+	"Common.h"
+	"in_out.h"
+	"Alg_1t.h"
+	"Alg_2t.h"
+
+1493240321 source:c:\users\grisha1.grisha-hppc\desktop\kursova\alg_1.c
+	"Common.h"
+	"Alg_1.h"
+
+1492880100 c:\users\grisha1.grisha-hppc\desktop\kursova\alg_1.h
+
+1493260327 source:c:\users\grisha1.grisha-hppc\desktop\kursova\main.c
+	"Common.h"
+	"in_out.h"
+
+1493240321 source:c:\users\grisha1.grisha-hppc\desktop\kursova\alg_2t.c
+	"Common.h"
+	"Alg_2t.h"
+
+1493160512 c:\users\grisha1.grisha-hppc\desktop\kursova\alg_2t.h
+
+1493240321 source:c:\users\grisha1.grisha-hppc\desktop\kursova\alg_1t.c
+	"Common.h"
+	"Alg_1t.h"
+
+1493160512 c:\users\grisha1.grisha-hppc\desktop\kursova\alg_1t.h
+
+1493240321 source:c:\users\grisha1.grisha-hppc\desktop\kursova\in_out.c
+	"Common.h"
+	"in_out.h"
+
+1492976309 c:\users\grisha1.grisha-hppc\desktop\kursova\in_out.h
+
